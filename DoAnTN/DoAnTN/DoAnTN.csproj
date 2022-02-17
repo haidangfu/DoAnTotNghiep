@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF6F1DA2-5943-4E35-8595-2E83B51E9006}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAnTN</RootNamespace>
+    <AssemblyName>DoAnTN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_DN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DN.Designer.cs">
+      <DependentUpon>frm_DN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCao.Designer.cs">
+      <DependentUpon>frm_BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoHongBaoMat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoHongBaoMat.Designer.cs">
+      <DependentUpon>frm_BaoHongBaoMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DanhMuc.Designer.cs">
+      <DependentUpon>frm_DanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DieuChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DieuChuyen.Designer.cs">
+      <DependentUpon>frm_DieuChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HeThong.Designer.cs">
+      <DependentUpon>frm_HeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KiemDem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KiemDem.Designer.cs">
+      <DependentUpon>frm_KiemDem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KiemKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KiemKe.Designer.cs">
+      <DependentUpon>frm_KiemKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanLyTaiSan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyTaiSan2.Designer.cs">
+      <DependentUpon>frm_QuanLyTaiSan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TaiSanGD_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TaiSanGD_Them.Designer.cs">
+      <DependentUpon>frm_TaiSanGD_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TaiSan_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TaiSan_Them.Designer.cs">
+      <DependentUpon>frm_TaiSan_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_QuanLyTaiSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyTaiSan.Designer.cs">
+      <DependentUpon>frm_QuanLyTaiSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TaiSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TaiSan.Designer.cs">
+      <DependentUpon>frm_TaiSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLTS.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTS.dbml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_DanhMuc.resx">
+      <DependentUpon>frm_DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DN.resx">
+      <DependentUpon>frm_DN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoHongBaoMat.resx">
+      <DependentUpon>frm_BaoHongBaoMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DieuChuyen.resx">
+      <DependentUpon>frm_DieuChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyTaiSan2.resx">
+      <DependentUpon>frm_QuanLyTaiSan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TaiSanGD_Them.resx">
+      <DependentUpon>frm_TaiSanGD_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TaiSan_Them.resx">
+      <DependentUpon>frm_TaiSan_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frm_QuanLyTaiSan.resx">
+      <DependentUpon>frm_QuanLyTaiSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TaiSan.resx">
+      <DependentUpon>frm_TaiSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="QLTS.dbml.layout">
+      <DependentUpon>QLTS.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLTS.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLTS.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\prohibition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
